@@ -4,46 +4,51 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "graphify_hook_pipeline",
-        "label": "Graphify Auto-Update Pipeline",
+        "id": "hook_handler_types",
+        "label": "Hook Handler Types",
         "nodes": [
-          "claudehooks_graphify_stop",
-          "claudehooks_detect_incremental",
-          "claudehooks_rebuild_code",
-          "claudehooks_to_wiki"
+          "hooks_handler_command",
+          "hooks_handler_http",
+          "hooks_handler_prompt",
+          "hooks_handler_agent"
         ],
         "relation": "implement",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "local/claude-hooks.md"
+        "source_file": "raw/code_claude_com_docs_en_hooks.md"
       },
       {
-        "id": "claude_hooks_system",
-        "label": "Claude Code Hooks System",
+        "id": "hook_lifecycle_events",
+        "label": "Hook Lifecycle Events",
         "nodes": [
-          "claudehooks_graphify_session_init",
-          "claudehooks_graphify_stop",
-          "claudehooks_wiki_auto_commit",
-          "claudehooks_rtk_rewrite",
-          "claudehooks_settings_json"
+          "hooks_event_sessionstart",
+          "hooks_event_sessionend",
+          "hooks_event_pretooluse",
+          "hooks_event_posttooluse",
+          "hooks_event_stop",
+          "hooks_event_precompact",
+          "hooks_event_postcompact"
         ],
         "relation": "participate_in",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "local/claude-hooks.md"
+        "source_file": "raw/code_claude_com_docs_en_hooks.md"
       },
       {
-        "id": "helper_greet_callers",
-        "label": "Functions calling greet()",
+        "id": "hook_decision_events",
+        "label": "Hook Events with Decision Control",
         "nodes": [
-          "helper_greet",
-          "helper_farewell",
-          "helper_shout"
+          "hooks_event_pretooluse",
+          "hooks_event_sessionstart",
+          "hooks_event_taskcreated",
+          "hooks_event_taskcompleted",
+          "hooks_event_teammateidle",
+          "hooks_event_workstreecreate"
         ],
-        "relation": "participate_in",
+        "relation": "implement",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "local/helper.py"
+        "source_file": "raw/code_claude_com_docs_en_hooks.md"
       }
     ]
   },
@@ -57,7 +62,7 @@
       "captured_at": "2026-04-08",
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 1,
       "id": "graphifysetup_graphify_claude_code_setup"
     },
     {
@@ -69,7 +74,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 1,
       "id": "graphifysetup_setup_script"
     },
     {
@@ -81,7 +86,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "id": "graphifysetup_graphify_cli"
     },
     {
@@ -93,7 +98,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 1,
       "id": "graphifysetup_session_init_hook"
     },
     {
@@ -105,7 +110,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 1,
       "id": "graphifysetup_session_stop_hook"
     },
     {
@@ -117,7 +122,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 1,
       "id": "graphifysetup_wiki_auto_commit_hook"
     },
     {
@@ -129,7 +134,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 1,
       "id": "graphifysetup_claude_settings"
     },
     {
@@ -141,7 +146,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "id": "graphifysetup_graph_json"
     },
     {
@@ -153,7 +158,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "id": "graphifysetup_graph_report"
     },
     {
@@ -165,7 +170,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 1,
       "id": "graphifysetup_wiki_index"
     },
     {
@@ -177,7 +182,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "id": "claudemd_llm_wiki_claude_md"
     },
     {
@@ -189,7 +194,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "id": "claudemd_obsidian_vault"
     },
     {
@@ -201,7 +206,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "id": "claudemd_obsidian_markdown_skill"
     },
     {
@@ -213,7 +218,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "id": "claudemd_obsidian_cli_skill"
     },
     {
@@ -225,7 +230,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "id": "claudemd_obsidian_bases_skill"
     },
     {
@@ -237,7 +242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "id": "claudemd_graphify_rebuild_command"
     },
     {
@@ -245,32 +250,32 @@
       "file_type": "code",
       "source_file": "local/helper.py",
       "source_location": "L1",
-      "id": "helper",
-      "community": 1
+      "community": 3,
+      "id": "helper"
     },
     {
       "label": "greet()",
       "file_type": "code",
       "source_file": "local/helper.py",
       "source_location": "L1",
-      "id": "helper_greet",
-      "community": 1
+      "community": 3,
+      "id": "helper_greet"
     },
     {
       "label": "farewell()",
       "file_type": "code",
       "source_file": "local/helper.py",
       "source_location": "L4",
-      "id": "helper_farewell",
-      "community": 1
+      "community": 3,
+      "id": "helper_farewell"
     },
     {
       "label": "shout()",
       "file_type": "code",
       "source_file": "local/helper.py",
       "source_location": "L7",
-      "id": "helper_shout",
-      "community": 1
+      "community": 3,
+      "id": "helper_shout"
     },
     {
       "label": "graphify-stop.sh Hook",
@@ -281,8 +286,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_graphify_stop",
-      "community": 4
+      "community": 2,
+      "id": "claudehooks_graphify_stop"
     },
     {
       "label": "graphify-session-init.sh Hook",
@@ -293,8 +298,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_graphify_session_init",
-      "community": 7
+      "community": 2,
+      "id": "claudehooks_graphify_session_init"
     },
     {
       "label": "wiki-auto-commit.sh Hook",
@@ -305,8 +310,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_wiki_auto_commit",
-      "community": 6
+      "community": 2,
+      "id": "claudehooks_wiki_auto_commit"
     },
     {
       "label": "rtk-rewrite.sh Hook",
@@ -317,8 +322,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_rtk_rewrite",
-      "community": 8
+      "community": 2,
+      "id": "claudehooks_rtk_rewrite"
     },
     {
       "label": "RTK (Rust Token Killer)",
@@ -329,8 +334,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_rtk",
-      "community": 8
+      "community": 2,
+      "id": "claudehooks_rtk"
     },
     {
       "label": "Graphify Knowledge Graph System",
@@ -341,8 +346,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_graphify_system",
-      "community": 7
+      "community": 2,
+      "id": "claudehooks_graphify_system"
     },
     {
       "label": "Obsidian LLM Wiki Vault",
@@ -353,8 +358,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_obsidian_wiki",
-      "community": 6
+      "community": 2,
+      "id": "claudehooks_obsidian_wiki"
     },
     {
       "label": "~/.claude/settings.json",
@@ -365,8 +370,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_settings_json",
-      "community": 8
+      "community": 2,
+      "id": "claudehooks_settings_json"
     },
     {
       "label": "graphify.detect.detect_incremental",
@@ -377,8 +382,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_detect_incremental",
-      "community": 4
+      "community": 2,
+      "id": "claudehooks_detect_incremental"
     },
     {
       "label": "graphify.watch._rebuild_code",
@@ -389,8 +394,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_rebuild_code",
-      "community": 4
+      "community": 2,
+      "id": "claudehooks_rebuild_code"
     },
     {
       "label": "graphify.wiki.to_wiki",
@@ -401,8 +406,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_to_wiki",
-      "community": 4
+      "community": 2,
+      "id": "claudehooks_to_wiki"
     },
     {
       "label": "Hook Lifecycle Flow",
@@ -413,8 +418,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_hook_lifecycle",
-      "community": 9
+      "community": 9,
+      "id": "claudehooks_hook_lifecycle"
     },
     {
       "label": "Rationale: Hooks enforce deterministic behavior",
@@ -425,8 +430,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_rationale_determinism",
-      "community": 7
+      "community": 2,
+      "id": "claudehooks_rationale_determinism"
     },
     {
       "label": "Rationale: Stop hooks early-exit guard",
@@ -437,8 +442,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claudehooks_rationale_early_exit",
-      "community": 6
+      "community": 2,
+      "id": "claudehooks_rationale_early_exit"
     },
     {
       "label": "Graph Report (2026-04-08)",
@@ -449,8 +454,464 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphreport_graph_report",
-      "community": 1
+      "community": 3,
+      "id": "graphreport_graph_report"
+    },
+    {
+      "label": "Claude Code Hooks",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_claude_code_hooks",
+      "community": 0
+    },
+    {
+      "label": "SessionStart Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_sessionstart",
+      "community": 8
+    },
+    {
+      "label": "InstructionsLoaded Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_instructionsloaded",
+      "community": 0
+    },
+    {
+      "label": "UserPromptSubmit Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_userpromptsubmit",
+      "community": 0
+    },
+    {
+      "label": "PreToolUse Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_pretooluse",
+      "community": 5
+    },
+    {
+      "label": "PermissionRequest Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_permissionrequest",
+      "community": 0
+    },
+    {
+      "label": "PermissionDenied Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_permissiondenied",
+      "community": 0
+    },
+    {
+      "label": "PostToolUse Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_posttooluse",
+      "community": 0
+    },
+    {
+      "label": "PostToolUseFailure Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_posttoolusefailure",
+      "community": 0
+    },
+    {
+      "label": "Notification Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_notification",
+      "community": 0
+    },
+    {
+      "label": "SubagentStart Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_subagentstart",
+      "community": 0
+    },
+    {
+      "label": "SubagentStop Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_subagentstopp",
+      "community": 0
+    },
+    {
+      "label": "TaskCreated Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_taskcreated",
+      "community": 4
+    },
+    {
+      "label": "TaskCompleted Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_taskcompleted",
+      "community": 4
+    },
+    {
+      "label": "Stop Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_stop",
+      "community": 7
+    },
+    {
+      "label": "StopFailure Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_stopfailure",
+      "community": 0
+    },
+    {
+      "label": "TeammateIdle Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_teammateidle",
+      "community": 4
+    },
+    {
+      "label": "ConfigChange Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_configchange",
+      "community": 0
+    },
+    {
+      "label": "CwdChanged Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_cwdchanged",
+      "community": 0
+    },
+    {
+      "label": "FileChanged Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_filechanged",
+      "community": 0
+    },
+    {
+      "label": "PreCompact Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_precompact",
+      "community": 0
+    },
+    {
+      "label": "PostCompact Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_postcompact",
+      "community": 0
+    },
+    {
+      "label": "WorktreeCreate Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_workstreecreate",
+      "community": 4
+    },
+    {
+      "label": "WorktreeRemove Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_worktreeremove",
+      "community": 0
+    },
+    {
+      "label": "Elicitation Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_elicitation",
+      "community": 0
+    },
+    {
+      "label": "ElicitationResult Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_elicitationresult",
+      "community": 0
+    },
+    {
+      "label": "SessionEnd Hook Event",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_event_sessionend",
+      "community": 0
+    },
+    {
+      "label": "Command Hook Handler",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_handler_command",
+      "community": 6
+    },
+    {
+      "label": "HTTP Hook Handler",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_handler_http",
+      "community": 0
+    },
+    {
+      "label": "Prompt Hook Handler",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_handler_prompt",
+      "community": 0
+    },
+    {
+      "label": "Agent Hook Handler",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_handler_agent",
+      "community": 0
+    },
+    {
+      "label": "Hooks Configuration in settings.json",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_config_settingsjson",
+      "community": 5
+    },
+    {
+      "label": "Hook Decision Control",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_decision_control",
+      "community": 4
+    },
+    {
+      "label": "Exit Code 2 Shows Output to Claude as Message",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_exitcode2_rationale",
+      "community": 6
+    },
+    {
+      "label": "Background Async Hooks",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_background_async",
+      "community": 7
+    },
+    {
+      "label": "Hook Matcher Patterns",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_matcher_patterns",
+      "community": 5
+    },
+    {
+      "label": "Hook Security Considerations",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_security_considerations",
+      "community": 6
+    },
+    {
+      "label": "SessionStart Matchers (startup/resume/clear/compact)",
+      "file_type": "document",
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "source_url": "https://code.claude.com/docs/en/hooks",
+      "captured_at": "2026-04-08T19:52:55.750333+00:00",
+      "author": null,
+      "contributor": "unknown",
+      "id": "hooks_sessionstart_matchers",
+      "community": 8
     }
   ],
   "links": [
@@ -738,9 +1199,9 @@
       "weight": 1.0,
       "_src": "helper",
       "_tgt": "helper_greet",
+      "confidence_score": 1.0,
       "source": "helper",
-      "target": "helper_greet",
-      "confidence_score": 1.0
+      "target": "helper_greet"
     },
     {
       "relation": "contains",
@@ -750,9 +1211,9 @@
       "weight": 1.0,
       "_src": "helper",
       "_tgt": "helper_farewell",
+      "confidence_score": 1.0,
       "source": "helper",
-      "target": "helper_farewell",
-      "confidence_score": 1.0
+      "target": "helper_farewell"
     },
     {
       "relation": "contains",
@@ -762,9 +1223,9 @@
       "weight": 1.0,
       "_src": "helper",
       "_tgt": "helper_shout",
+      "confidence_score": 1.0,
       "source": "helper",
-      "target": "helper_shout",
-      "confidence_score": 1.0
+      "target": "helper_shout"
     },
     {
       "relation": "calls",
@@ -1017,50 +1478,619 @@
       "_tgt": "claudehooks_graphify_system",
       "source": "claudehooks_graphify_system",
       "target": "claudehooks_rationale_determinism"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_sessionstart",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_sessionstart"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_instructionsloaded",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_instructionsloaded"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_userpromptsubmit",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_userpromptsubmit"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_pretooluse",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_pretooluse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_permissionrequest",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_permissionrequest"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_permissiondenied",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_permissiondenied"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_posttooluse",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_posttooluse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_posttoolusefailure",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_posttoolusefailure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_notification",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_notification"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_subagentstart",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_subagentstart"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_subagentstopp",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_subagentstopp"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_taskcreated",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_taskcreated"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_taskcompleted",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_taskcompleted"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_stop",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_stop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_stopfailure",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_stopfailure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_teammateidle",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_teammateidle"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_configchange",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_configchange"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_cwdchanged",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_cwdchanged"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_filechanged",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_filechanged"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_precompact",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_precompact"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_postcompact",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_postcompact"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_workstreecreate",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_workstreecreate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_worktreeremove",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_worktreeremove"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_elicitation",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_elicitation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_elicitationresult",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_elicitationresult"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_event_sessionend",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_event_sessionend"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_handler_command",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_handler_command"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_handler_http",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_handler_http"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_handler_prompt",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_handler_prompt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_handler_agent",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_handler_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_config_settingsjson",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_config_settingsjson"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_matcher_patterns",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_matcher_patterns"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_decision_control"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_background_async",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_background_async"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_claude_code_hooks",
+      "_tgt": "hooks_security_considerations",
+      "source": "hooks_claude_code_hooks",
+      "target": "hooks_security_considerations"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_event_sessionstart",
+      "_tgt": "hooks_sessionstart_matchers",
+      "source": "hooks_event_sessionstart",
+      "target": "hooks_sessionstart_matchers"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_event_pretooluse",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_event_pretooluse",
+      "target": "hooks_decision_control"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 0.8,
+      "_src": "hooks_matcher_patterns",
+      "_tgt": "hooks_event_pretooluse",
+      "source": "hooks_event_pretooluse",
+      "target": "hooks_matcher_patterns"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_event_taskcreated",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_event_taskcreated",
+      "target": "hooks_decision_control"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_event_taskcompleted",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_event_taskcompleted",
+      "target": "hooks_decision_control"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 0.7,
+      "_src": "hooks_background_async",
+      "_tgt": "hooks_event_stop",
+      "source": "hooks_event_stop",
+      "target": "hooks_background_async"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_event_teammateidle",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_event_teammateidle",
+      "target": "hooks_decision_control"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_event_workstreecreate",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_event_workstreecreate",
+      "target": "hooks_decision_control"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "hooks_exitcode2_rationale",
+      "_tgt": "hooks_handler_command",
+      "source": "hooks_handler_command",
+      "target": "hooks_exitcode2_rationale"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 0.8,
+      "_src": "hooks_security_considerations",
+      "_tgt": "hooks_handler_command",
+      "source": "hooks_handler_command",
+      "target": "hooks_security_considerations"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_config_settingsjson",
+      "_tgt": "hooks_matcher_patterns",
+      "source": "hooks_config_settingsjson",
+      "target": "hooks_matcher_patterns"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/code_claude_com_docs_en_hooks.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "hooks_exitcode2_rationale",
+      "_tgt": "hooks_decision_control",
+      "source": "hooks_decision_control",
+      "target": "hooks_exitcode2_rationale"
     }
   ],
   "hyperedges": [
     {
-      "id": "graphify_hook_pipeline",
-      "label": "Graphify Auto-Update Pipeline",
+      "id": "hook_handler_types",
+      "label": "Hook Handler Types",
       "nodes": [
-        "claudehooks_graphify_stop",
-        "claudehooks_detect_incremental",
-        "claudehooks_rebuild_code",
-        "claudehooks_to_wiki"
+        "hooks_handler_command",
+        "hooks_handler_http",
+        "hooks_handler_prompt",
+        "hooks_handler_agent"
       ],
       "relation": "implement",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "local/claude-hooks.md"
+      "source_file": "raw/code_claude_com_docs_en_hooks.md"
     },
     {
-      "id": "claude_hooks_system",
-      "label": "Claude Code Hooks System",
+      "id": "hook_lifecycle_events",
+      "label": "Hook Lifecycle Events",
       "nodes": [
-        "claudehooks_graphify_session_init",
-        "claudehooks_graphify_stop",
-        "claudehooks_wiki_auto_commit",
-        "claudehooks_rtk_rewrite",
-        "claudehooks_settings_json"
+        "hooks_event_sessionstart",
+        "hooks_event_sessionend",
+        "hooks_event_pretooluse",
+        "hooks_event_posttooluse",
+        "hooks_event_stop",
+        "hooks_event_precompact",
+        "hooks_event_postcompact"
       ],
       "relation": "participate_in",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "local/claude-hooks.md"
+      "source_file": "raw/code_claude_com_docs_en_hooks.md"
     },
     {
-      "id": "helper_greet_callers",
-      "label": "Functions calling greet()",
+      "id": "hook_decision_events",
+      "label": "Hook Events with Decision Control",
       "nodes": [
-        "helper_greet",
-        "helper_farewell",
-        "helper_shout"
+        "hooks_event_pretooluse",
+        "hooks_event_sessionstart",
+        "hooks_event_taskcreated",
+        "hooks_event_taskcompleted",
+        "hooks_event_teammateidle",
+        "hooks_event_workstreecreate"
       ],
-      "relation": "participate_in",
+      "relation": "implement",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "local/helper.py"
+      "source_file": "raw/code_claude_com_docs_en_hooks.md"
     }
   ]
 }

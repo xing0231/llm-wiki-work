@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "graphify-out/wiki/index.md",
+                "file": "graphify-out/wiki/graphify-session-init.sh_Hook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "graphify-session-init.sh_Hook"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "graphify-out/wiki/index.md",
+                "file": "graphify-out/wiki/graphify-session-init.sh_Hook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for index"
+              "title": "Backlinks for graphify-session-init.sh_Hook"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "graphify-out/wiki/index.md",
+                "file": "graphify-out/wiki/graphify-session-init.sh_Hook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from index"
+              "title": "Outgoing links from graphify-session-init.sh_Hook"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "graphify-out/wiki/index.md",
+                "file": "graphify-out/wiki/graphify-session-init.sh_Hook.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of graphify-session-init.sh_Hook"
             }
           }
         ]
@@ -185,41 +185,40 @@
   },
   "active": "ae9417ed6209c78f",
   "lastOpenFiles": [
-    "graphify-out/wiki/wiki-auto-commit.sh_Hook.md",
+    "raw/code_claude_com_docs_en_hooks.md",
+    "graphify-out/cache/bac18dd5cec713e989898fbfb35d0988b80dbac556f7257cd271b0eedbabbe3e.json",
     "graphify-out/GRAPH_REPORT.md",
-    "graphify-out/wiki/setup-graphify.sh.md",
-    "graphify-out/wiki/Community_33.md",
-    "graphify-out/wiki/Graphify_+_Claude_Code_Setup.md",
-    "graphify-out/wiki/Community_26.md",
-    "graphify-out/wiki/Community_9.md",
+    "CLAUDE.md",
+    "Untitled.md",
     "graphify-setup.md",
+    "graphify-out/wiki/Community_26.md",
+    "graphify-out/wiki/Community_18.md",
+    "graphify-out/wiki/Community_12.md",
+    "Community 3.md",
+    "graphify-out/wiki/Claude_Global_Settings_(~-.claude-settings.json).md",
+    "graphify-out/wiki/wiki-index.md_(Agent_Entry_Point).md",
+    "graphify-out/wiki/wiki-auto-commit.sh_Hook.md",
+    "graphify-out/wiki/index.md",
+    "graphify-out/wiki/GRAPH_REPORT.md_(God_Nodes_&_Communities).md",
+    "graphify-out/wiki/graph.json_(Raw_Graph_Data).md",
+    "graphify-out/wiki/Graphify_+_Claude_Code_Setup.md",
+    "graphify-out/wiki/Graphify_CLI_(graphifyy_package).md",
+    "graphify-out/wiki/setup-graphify.sh.md",
+    "raw",
+    "graphify-out/wiki/Community_33.md",
+    "graphify-out/wiki/Community_9.md",
     "graphify-out/wiki/Community_34.md",
     "graphify-out/wiki/Community_32.md",
     "graphify-out/wiki/Community_31.md",
     "graphify-out/wiki/Community_30.md",
     "graphify-out/wiki/Community_29.md",
-    "graphify-out/wiki/Community_28.md",
-    "graphify-out/wiki/Community_27.md",
-    "graphify-out/wiki/Community_25.md",
-    "graphify-out/wiki/Community_24.md",
-    "graphify-out/wiki/Community_23.md",
-    "graphify-out/wiki/Community_22.md",
-    "graphify-out/wiki/Community_21.md",
-    "graphify-out/wiki/Community_20.md",
-    "graphify-out/wiki/Community_19.md",
-    "graphify-out/wiki/Community_18.md",
-    "graphify-out/wiki/Community_17.md",
-    "graphify-out/wiki/Community_16.md",
     "graphify-out/cache/acc0edcc230cc0e3f7bc0f42ab894818e3b7b5515588c4569f14f0b6756aa23c.json",
     "graphify-out/cache/7b4f76e4e86774c0cb07c95724c7a9490d3e8e492d7f17362d41ab1c350be1b6.json",
     "graphify-out/cache/c62b8a7875d34cc4cf08356fb4022f1526be5960ac46a06b857a9f3123e7d07b.json",
-    "CLAUDE.md",
     "graphify-out/wiki",
     "graphify-out/cost.json",
     "graphify-out/manifest.json",
     "graphify-out/graph.html",
-    "graphify-out/graph.json",
-    "graphify-out/cache/d225603e9b00c430733c863e1cb84ea7f9fab5ab45e35e62464bfb4f603ed892.json",
-    "graphify-out/cache/2d61d64c3083abbf4cea99e7bcb647a191dca6a46ff018e9969a8113b4bd1c3d.json"
+    "graphify-out/graph.json"
   ]
 }
