@@ -183,11 +183,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "35af786b7248c7b8",
+  "active": "ae9417ed6209c78f",
   "lastOpenFiles": [
+    "graphify-out",
     "graphify-setup.md",
     "CLAUDE.md",
-    "graphify-out",
     "Untitled.md",
     "setup-graphify.sh"
   ]
