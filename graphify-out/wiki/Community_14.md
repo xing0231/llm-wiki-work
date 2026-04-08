@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **wiki-auto-commit.sh Hook** (0 connections) — `graphify-setup.md`
+- **Graphify In-Session Rebuild Command** (0 connections) — `CLAUDE.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `CLAUDE.md`
 
 ## Audit Trail
 

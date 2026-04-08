@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Graphify + Claude Code Setup** (0 connections) — `graphify-setup.md`
+- **RTK (Rust Token Killer)** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

@@ -2,7 +2,7 @@
 
 > God node · 0 connections · `graphify-setup.md`
 
-**Community:** [[Community 1]]
+**Community:** [[Community 2]]
 
 ## Connections by Relation
 

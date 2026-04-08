@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GRAPH_REPORT.md (God Nodes & Communities)** (0 connections) — `graphify-setup.md`
+- **graphify.watch._rebuild_code** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

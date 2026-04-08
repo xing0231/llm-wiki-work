@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **wiki/index.md (Agent Entry Point)** (0 connections) — `graphify-setup.md`
+- **CLAUDE.md (llm-wiki-work Project Instructions)** (0 connections) — `CLAUDE.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `CLAUDE.md`
 
 ## Audit Trail
 

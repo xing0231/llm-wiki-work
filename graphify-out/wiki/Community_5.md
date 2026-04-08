@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Obsidian Vault (llm-wiki-work)** (0 connections) — `CLAUDE.md`
+- **Obsidian LLM Wiki Vault** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `CLAUDE.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

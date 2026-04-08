@@ -1,10 +1,10 @@
-# Community 3
+# Community 31
 
 > 1 nodes · cohesion 1.00
 
 ## Key Concepts
 
-- **Graphify Knowledge Graph System** (0 connections) — `local/claude-hooks.md`
+- **helper.py** (0 connections) — `local/helper.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `local/claude-hooks.md`
+- `local/helper.py`
 
 ## Audit Trail
 

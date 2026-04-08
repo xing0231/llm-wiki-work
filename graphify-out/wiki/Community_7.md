@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **graph.json (Raw Graph Data)** (0 connections) — `graphify-setup.md`
+- **Rationale: Stop hooks early-exit guard** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

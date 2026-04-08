@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **obsidian-markdown Skill** (0 connections) — `CLAUDE.md`
+- **Hook Lifecycle Flow** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `CLAUDE.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

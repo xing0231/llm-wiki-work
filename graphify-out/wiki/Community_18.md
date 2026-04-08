@@ -1,10 +1,10 @@
-# Community 3
+# Community 18
 
 > 1 nodes · cohesion 1.00
 
 ## Key Concepts
 
-- **Graphify Knowledge Graph System** (0 connections) — `local/claude-hooks.md`
+- **obsidian-markdown Skill** (0 connections) — `CLAUDE.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `local/claude-hooks.md`
+- `CLAUDE.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Graphify CLI (graphifyy package)** (0 connections) — `graphify-setup.md`
+- **rtk-rewrite.sh Hook** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

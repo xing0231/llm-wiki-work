@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Claude Global Settings (~/.claude/settings.json)** (0 connections) — `graphify-setup.md`
+- **Rationale: Hooks enforce deterministic behavior** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `graphify-setup.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

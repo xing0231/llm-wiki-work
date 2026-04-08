@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **CLAUDE.md (llm-wiki-work Project Instructions)** (0 connections) — `CLAUDE.md`
+- **graphify-session-init.sh Hook** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `CLAUDE.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Graphify In-Session Rebuild Command** (0 connections) — `CLAUDE.md`
+- **graphify.detect.detect_incremental** (0 connections) — `local/claude-hooks.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `CLAUDE.md`
+- `local/claude-hooks.md`
 
 ## Audit Trail
 

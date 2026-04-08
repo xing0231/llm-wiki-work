@@ -1,10 +1,10 @@
-# Community 3
+# Community 30
 
 > 1 nodes · cohesion 1.00
 
 ## Key Concepts
 
-- **Graphify Knowledge Graph System** (0 connections) — `local/claude-hooks.md`
+- **Graph Report (2026-04-08)** (0 connections) — `wiki/graphify-out/GRAPH_REPORT.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `local/claude-hooks.md`
+- `wiki/graphify-out/GRAPH_REPORT.md`
 
 ## Audit Trail
 
