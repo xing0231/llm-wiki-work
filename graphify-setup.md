@@ -31,7 +31,7 @@ Edit the path variables at the top of `setup-graphify.sh` if directories differ 
 |------|---------|-----------------|
 | 1 | `pipx install graphifyy` | graphify CLI + Python package |
 | 2 | writes hook scripts | `~/.claude/hooks/graphify-session-init.sh` and `graphify-stop.sh` |
-| 3 | edits `~/.claude/settings.json` | registers Stop + PreToolUse hooks globally |
+| 3 | edits `~/.claude/settings.json` | registers `SessionStart` + `Stop` hooks globally |
 | 4 | `graphify claude install` | adds graphify section to project CLAUDE.md |
 | 5 | `graphify hook install` | installs git post-commit + post-checkout hooks |
 
@@ -39,7 +39,7 @@ Edit the path variables at the top of `setup-graphify.sh` if directories differ 
 
 | Trigger | What runs | LLM tokens? |
 |---------|-----------|-------------|
-| Session start (first Bash call) | Creates `wiki/graphify-out → ~/llm-wiki-work/graphify-out` symlink + starts `--watch` background process | None |
+| Session start (`SessionStart` hook, `matcher: startup`) | Creates `./graphify-out → ~/llm-wiki-work/graphify-out` symlink + starts `--watch` background process | None |
 | `git commit` | AST rebuild for changed code files | None |
 | `git checkout` | Syncs graph to new branch | None |
 | Session end | AST rebuild if code changed + regenerates `graphify-out/wiki/` + auto-commit & push to remote | None |
