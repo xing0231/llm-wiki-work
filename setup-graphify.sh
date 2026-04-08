@@ -29,6 +29,9 @@ GRAPHIFY_BIN=$(which graphify)
 GRAPHIFY_PYTHON=$(head -1 "$GRAPHIFY_BIN" | tr -d '#!')
 echo "    Python: $GRAPHIFY_PYTHON"
 
+echo "==> [1b/5] Injecting watchdog into graphify venv (needed for --watch)..."
+pipx inject graphifyy watchdog
+
 echo "==> [2/5] Installing global Claude hook scripts..."
 mkdir -p "$CLAUDE_HOOKS_DIR"
 
