@@ -183,8 +183,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "ae9417ed6209c78f",
+  "active": "35af786b7248c7b8",
   "lastOpenFiles": [
+    "graphify-out/cost.json",
+    "graphify-out/manifest.json",
+    "graphify-out/graph.html",
+    "graphify-out/graph.json",
+    "graphify-out/GRAPH_REPORT.md",
+    "graphify-out/cache/d225603e9b00c430733c863e1cb84ea7f9fab5ab45e35e62464bfb4f603ed892.json",
+    "graphify-out/cache/2d61d64c3083abbf4cea99e7bcb647a191dca6a46ff018e9969a8113b4bd1c3d.json",
+    "graphify-out/cache",
     "graphify-out/needs_update",
     "CLAUDE.md",
     "graphify-out",
