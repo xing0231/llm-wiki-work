@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f14778d98e2bb0ab",
+        "id": "abaa5b64745c7864",
         "type": "tabs",
         "children": [
           {
-            "id": "ae9417ed6209c78f",
+            "id": "c80a3437f05fd2c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "graphify-out/wiki/Graphify_+_Claude_Code_Setup.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Graphify_+_Claude_Code_Setup"
+              "title": "New tab"
             }
           }
         ]
@@ -183,8 +179,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "ae9417ed6209c78f",
+  "active": "c80a3437f05fd2c5",
   "lastOpenFiles": [
+    "graphify-out/wiki/Graphify_+_Claude_Code_Setup.md",
     "graphify-out/wiki/wiki-auto-commit.sh_Hook.md",
     "graphify-out/wiki/graphify-session-init.sh_Hook.md",
     "graphify-out/wiki/Community_72.md",
@@ -210,7 +207,6 @@
     "graphify-out/wiki/Community_52.md",
     "graphify-out/wiki/Community_51.md",
     "graphify-out/wiki/Community_50.md",
-    "graphify-out/wiki/Community_49.md",
     "graphify-out/cache/bac18dd5cec713e989898fbfb35d0988b80dbac556f7257cd271b0eedbabbe3e.json",
     "raw",
     "graphify-out/cache/acc0edcc230cc0e3f7bc0f42ab894818e3b7b5515588c4569f14f0b6756aa23c.json",
